@@ -1,0 +1,11 @@
+{
+  "name": "dev-ped-az-backend",
+  "version": "1.0.0",
+  "description": "Express backend for dev-ped-az website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "justindeocampo99@gmail.com",
+  "license": "ISC"
+}
