@@ -8,6 +8,6 @@ export type Color = {
 export const COLOR: Color = {
     mainBlue: '#0B2545',
     mediumBlue: '#13315C',
-    lightBlue: '#8DA9C4',
+    lightBlue: '#ADD8E6',
     paper: '#EEF4ED'
 }
