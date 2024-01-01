@@ -52,7 +52,7 @@ const Header: React.FC = () => {
               color="inherit"
               variant="text"
             >
-              About Us
+              Contact Us
             </Button>
             <Box display="flex" alignItems="start" height="100%">
               <PhoneIcon sx={{ color: COLOR.darkGreen, marginTop: "6px" }} />
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
             </Button>
             <Button color="inherit">Health Services</Button>
             <Button color="inherit" component={Link} to="/appointment">Book an Appointment</Button>
-            <Button color="inherit">Resources</Button>
+            <Button color="inherit">FAQ / Resources</Button>
           </Box>
         </Toolbar>
       </AppBar>
