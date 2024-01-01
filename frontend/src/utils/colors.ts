@@ -1,13 +1,13 @@
 export type Color = {
-    mainBlue: string;
-    lightBlue: string,
-    mediumBlue: string,
+    mainGreen: string;
+    darkGreen: string,
+    mediumGreen: string,
     paper: string;
 }
 
 export const COLOR: Color = {
-    mainBlue: '#0B2545',
-    mediumBlue: '#13315C',
-    lightBlue: '#ADD8E6',
+    mainGreen: '#b3cebf',
+    mediumGreen: '#04724D',
+    darkGreen: '#255957',
     paper: '#EEF4ED'
 }

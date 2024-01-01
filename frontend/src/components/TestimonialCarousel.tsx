@@ -49,7 +49,7 @@ const TestimonialsCarousel: React.FC = () => {
         <Typography variant="h3" gutterBottom align="center">
             Client Testimonials
         </Typography>
-        <Box width="20%" height="3px" bgcolor={COLOR.mainBlue} mb={3}></Box>
+        <Box width="20%" height="3px" bgcolor={COLOR.mainGreen} mb={3}></Box>
         <Box
             width="60%" 
             height={100} 

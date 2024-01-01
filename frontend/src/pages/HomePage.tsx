@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
           />
         </Box>
       </Box>
-      <Box sx={{ position: "relative", bgcolor: COLOR.lightBlue }}>
+      <Box sx={{ position: "relative", bgcolor: COLOR.darkGreen }}>
         <TestimonialsCarousel />
       </Box>
     </Box>
