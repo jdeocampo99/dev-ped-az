@@ -7,7 +7,7 @@ export type Color = {
 
 export const COLOR: Color = {
     mainGreen: '#b3cebf',
-    mediumGreen: '#04724D',
+    mediumGreen: '#55828B',
     darkGreen: '#255957',
     paper: '#EEF4ED'
 }

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Header: React.FC = () => {
   return (
     <div>
-      <AppBar position="sticky">
+      <AppBar position="sticky" sx={{ top: 0 }}>
         <Toolbar
           sx={{
             bgcolor: COLOR.mainGreen,

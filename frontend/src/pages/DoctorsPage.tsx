@@ -18,10 +18,10 @@ const DoctorsPage: React.FC = () => {
   };
 
   return (
-    <Box>
+    <Box sx={{backgroundColor: COLOR.paper,}}>
       <Header />
       <Box sx={{ padding: 10, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-        <Typography variant="h2" sx={{ marginBottom: 2, fontWeight: "bold" }}>
+        <Typography variant="h2" color={COLOR.darkGreen} sx={{ marginBottom: 2, fontWeight: "bold" }}>
           Our Doctors
         </Typography>
         <Typography variant="body1">
@@ -40,7 +40,7 @@ const DoctorsPage: React.FC = () => {
         <Grid item xs={6}>
           <Box sx={{ padding: 3 }}>
             <Typography variant="h2" sx={{ fontWeight: 400, padding: "10px"}}>Anna C. De Ocampo, M.D. FAAP</Typography>
-            <Typography variant="h6" sx={{ fontStyle: "italic", padding: "10px"}}>Board-Certified Developmental and Behavioral Pediatrician </Typography>
+            <Typography  color={COLOR.darkGreen} variant="h6" sx={{ fontStyle: "italic", padding: "10px"}}>Board-Certified Developmental and Behavioral Pediatrician </Typography>
             <Collapse in={!showDetails1}>
               <Typography variant="body1" sx={{padding: "10px"}}>
               Dr. Anna C. De Ocampo is a Board-Certified Developmental and Behavioral Pediatrician with over two decades of dedicated practice in her field. Her journey commenced with a General Pediatric Residency at the esteemed University of Pittsburgh Medical Center (UPMC) Mercy, where she distinguished herself as chief resident. Dr. De Ocampo then pursued subspecialty training in Developmental and Behavioral Pediatrics at the Medical University of South Carolina (MUSC) in 1999, honing her expertise.<br/><br/>
@@ -68,7 +68,7 @@ Dr.De Ocampo's decision to prioritize new patient consultations underscores her 
         <Grid item xs={6}>
           <Box sx={{ padding: 3 }}>
             <Typography variant="h2" sx={{ fontWeight: 400, padding: "10px"}}>Charissa P. Benito, MD, FAAP</Typography>
-            <Typography variant="h6" sx={{ fontStyle: "italic", padding: "10px"}}>Board-Certified Developmental and Behavioral Pediatrician </Typography>
+            <Typography color={COLOR.darkGreen} variant="h6" sx={{ fontStyle: "italic", padding: "10px"}}>Board-Certified Developmental and Behavioral Pediatrician </Typography>
             <Collapse in={!showDetails2}>
               <Typography variant="body1" sx={{padding: "10px"}}>
               Dr. Charissa Pe Benito completed her pediatric residency at Brookdale University Medical Center in Brooklyn, NY, where she received the esteemed title of Best Senior Resident from her colleagues and the medical staff. <br/><br/>

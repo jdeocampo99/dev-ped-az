@@ -23,8 +23,11 @@ const AppointmentPage: React.FC = () => {
             mt: 4, // Margin top to center the form vertically
             }}
         >
-            <Typography variant="h4" gutterBottom>
+            <Typography color={COLOR.darkGreen} variant="h4" gutterBottom>
             Contact Us
+            </Typography>
+            <Typography gutterBottom>
+            Please fill out this form and our staff <br/>will email you regarding next steps.
             </Typography>
             <form>
             <Grid container spacing={2}>
