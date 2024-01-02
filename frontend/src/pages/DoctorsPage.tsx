@@ -67,7 +67,7 @@ Dr.De Ocampo's decision to prioritize new patient consultations underscores her 
         {/* Doctor 2 */}
         <Grid item xs={6}>
           <Box sx={{ padding: 3 }}>
-            <Typography variant="h2" sx={{ fontWeight: 400, padding: "10px"}}>Charissa P. Benito, MD, FAAP</Typography>
+            <Typography variant="h2" sx={{ fontWeight: 400, padding: "10px"}}>Charissa P. Pe Benito, MD, FAAP</Typography>
             <Typography color={COLOR.darkGreen} variant="h6" sx={{ fontStyle: "italic", padding: "10px"}}>Board-Certified Developmental and Behavioral Pediatrician </Typography>
             <Collapse in={!showDetails2}>
               <Typography variant="body1" sx={{padding: "10px"}}>

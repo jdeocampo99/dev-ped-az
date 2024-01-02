@@ -73,7 +73,7 @@ const Header: React.FC = () => {
             </Button>
             <Button color="inherit">Health Services</Button>
             <Button color="inherit" component={Link} to="/appointment">Book an Appointment</Button>
-            <Button color="inherit">FAQ / Resources</Button>
+            <Button color="inherit" component={Link} to="/resources">FAQ / Resources</Button>
           </Box>
         </Toolbar>
       </AppBar>

@@ -46,7 +46,7 @@ const TestimonialsCarousel: React.FC = () => {
 
   return (
     <Box display="flex" flexDirection="column" alignItems="center" p={3}>
-        <Typography variant="h3" gutterBottom align="center">
+        <Typography color={COLOR.paper} variant="h3" gutterBottom align="center">
             Client Testimonials
         </Typography>
         <Box width="20%" height="3px" bgcolor={COLOR.mainGreen} mb={3}></Box>
