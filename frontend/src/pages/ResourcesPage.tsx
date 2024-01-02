@@ -87,7 +87,6 @@ const faqItems: FAQItem[] = [
         </li>
         <li>This may include providing community resources  and support for the family and referrals to appropriate therapists and agencies.
         </li>
-        <li></li>
     </ul>
     `
   },
