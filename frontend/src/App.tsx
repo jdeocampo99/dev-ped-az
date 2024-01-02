@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import DoctorsPage from "./pages/DoctorsPage";
 import AppointmentPage from "./pages/AppointmentPage";
 import ResourcesPage from "./pages/ResourcesPage";
+import HealthServicesPage from "./pages/HealthServicesPage";
+import ContactPage from "./pages/ContactPage";
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
           <Route path="/doctors" element={<DoctorsPage />} />
           <Route path="/appointment" element={<AppointmentPage />}/>
           <Route path="/resources" element={<ResourcesPage />}/>
+          <Route path="/healthservices" element={<HealthServicesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Router>
     </div>

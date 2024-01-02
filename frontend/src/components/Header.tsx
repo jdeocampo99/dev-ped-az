@@ -51,6 +51,8 @@ const Header: React.FC = () => {
               sx={{ fontSize: 15, color: COLOR.darkGreen }}
               color="inherit"
               variant="text"
+              component={Link}
+              to="/contact"
             >
               Contact Us
             </Button>
@@ -71,7 +73,7 @@ const Header: React.FC = () => {
             <Button color="inherit" component={Link} to="/doctors">
               Meet Our Doctors
             </Button>
-            <Button color="inherit">Health Services</Button>
+            <Button color="inherit" component={Link} to="/healthservices">Health Services</Button>
             <Button color="inherit" component={Link} to="/appointment">Book an Appointment</Button>
             <Button color="inherit" component={Link} to="/resources">FAQ / Resources</Button>
           </Box>
