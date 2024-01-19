@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
               Welcome To Our Practice!
             </Typography>
             <Typography variant="body1">
-            Welcome to Developmental Behavioral Pediatrics of Arizona, where our utmost priority is  children and their families. DBPAZ is a distinguished pediatric medical practice <strong>specializing in neurodevelopmental evaluation, diagnosis, and comprehensive management of children aged 18 months to 12 years</strong>. Our mission is rooted in providing a compassionate, nurturing, and collaborative approach to pediatric developmental care.<br/><br/>
+            Welcome to Developmental Behavioral Pediatrics of Arizona, where our utmost priority is  children and their families. DBPAZ is a pediatric medical practice <strong>specializing in neurodevelopmental evaluation, diagnosis, and comprehensive management of children aged 18 months to 12 years</strong>. Our mission is rooted in providing a compassionate, nurturing, and collaborative approach to pediatric developmental care.<br/><br/>
             At DBPAZ, we hold a steadfast dedication to understanding and embracing each child as a unique individual. By meticulously identifying their specific needs, strengths, and areas of development, we tailor a systematic and personalized treatment plan to address their unique requirements. Our unwavering focus is on being a resource for families, offering them invaluable guidance in navigating and addressing their child's needs.
             </Typography>
           </Box>
@@ -60,7 +60,7 @@ const HomePage: React.FC = () => {
               How Are We Different?
             </Typography>
             <Typography variant="body1">
-            We pride ourselves on our exceptional team of board-certified medical doctors specializing in Developmental and Behavioral Pediatrics. <strong>Dr. Anna C. De Ocampo and Dr. Charissa P. Pe Benito</strong>, both recipients of the prestigious <strong>Top Doctors of Arizona Award</strong> in their field, bring extensive experience and expertise to our practice. <br/><br/>
+            We pride ourselves on our exceptional team of board-certified medical doctors specializing in Developmental and Behavioral Pediatrics. <strong>Dr. Anna C. De Ocampo and Dr. Charissa P. Pe Benito</strong>, both recipients of the prestigious <strong>Phoenix Top Doc Award</strong> in their field, bring extensive experience and expertise to our practice. <br/><br/>
             We take a <strong>"whole child"</strong> approach to neurodevelopmental assessments, addressing every aspect of your child's well-being. Our comprehensive model of care encompasses a thorough evaluation of your child's development, learning, academic challenges, social communication skills, behavioral and emotional concerns, as well as any potential medical, environmental, neurological, or genetic factors contributing to their challenges.
             </Typography>
           </Box>
