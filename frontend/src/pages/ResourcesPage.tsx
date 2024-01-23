@@ -146,7 +146,7 @@ const ResourcesPage: React.FC = () => {
         {/* Useful Links Section */}
         <Box sx={{ padding: 3 }}>
           <Typography variant="h4" sx={{ marginBottom: 2 }}>
-            Useful Links
+            Resources
           </Typography>
           <ul>
             {usefulLinks.map((link, index) => (

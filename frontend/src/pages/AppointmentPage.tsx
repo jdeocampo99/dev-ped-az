@@ -27,7 +27,7 @@ const AppointmentPage: React.FC = () => {
             Contact Us
             </Typography>
             <Typography gutterBottom>
-            Please fill out this form and our staff <br/>will email you regarding next steps.
+            Please fill out this form and our staff <br/>will contact you regarding next steps.
             </Typography>
             <form>
             <Grid container spacing={2}>

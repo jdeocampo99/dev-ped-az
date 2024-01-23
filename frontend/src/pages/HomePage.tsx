@@ -86,16 +86,16 @@ const HomePage: React.FC = () => {
           }}
         >
           <InfoBox
+            headerText="Personalized Patient Care"
+            descriptionText="We embrace neurodiversity. Each child is unique and we will tailor the care plan to fit your child’s individual needs"
+          />
+          <InfoBox
             headerText="State-of-the-Art Facilities"
             descriptionText="Equipped with the latest medical technology to provide you with the best care."
           />
           <InfoBox
-            headerText="Personalized Patient Care"
-            descriptionText="Every patient is unique. Receive tailored care plans to fit your individual needs."
-          />
-          <InfoBox
-            headerText="Award-Winning Medical Team"
-            descriptionText="Our dedicated team has been recognized for their excellence in patient care."
+            headerText="Top-Rated Medical Team"
+            descriptionText="Dr. Pe Benito and Dr. De Ocampo are both honored recipients of the Valley’s Top Doctors award by the Phoenix Magazine."
           />
         </Box>
       </Box>
