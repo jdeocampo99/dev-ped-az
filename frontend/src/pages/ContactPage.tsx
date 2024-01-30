@@ -22,9 +22,21 @@ const ContactPage: React.FC = () => {
             Address
           </Typography>
           <Typography variant="body1">
-            123 Medical St.<br />
-            Scottsdale, AZ 82560<br />
+            5020 E Shea Blvd <br />
+            Suite 250<br />
+            Scottsdale, AZ 85254<br />
             United States
+          </Typography>
+        </Box>
+
+        {/* Working Hours */}
+        <Box sx={{ padding: 3 }}>
+          <Typography variant="h4" sx={{ marginBottom: 2 }}>
+            Working Hours
+          </Typography>
+          <Typography variant="body1">
+            Monday - Thursday <br/>
+            8am - 4pm
           </Typography>
         </Box>
 
@@ -35,6 +47,16 @@ const ContactPage: React.FC = () => {
           </Typography>
           <Typography variant="body1">
             <Link href="tel:480-123-4567">(480) 123-4567</Link>
+          </Typography>
+        </Box>
+
+        {/* Fax Number */}
+        <Box sx={{ padding: 3 }}>
+          <Typography variant="h4" sx={{ marginBottom: 2 }}>
+            Fax Number
+          </Typography>
+          <Typography variant="body1">
+            <Link href="tel:+1-907-555-1234">+1-907-555-1234 </Link>
           </Typography>
         </Box>
 
