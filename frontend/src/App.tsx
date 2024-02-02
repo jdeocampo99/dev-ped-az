@@ -7,6 +7,7 @@ import ResourcesPage from "./pages/ResourcesPage";
 import HealthServicesPage from "./pages/HealthServicesPage";
 import ContactPage from "./pages/ContactPage";
 import FAQPage from "./pages/FAQPage";
+import ProcessPage from "./pages/ProcessPage";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/healthservices" element={<HealthServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/process" element={<ProcessPage />} />
         </Routes>
       </Router>
     </div>
