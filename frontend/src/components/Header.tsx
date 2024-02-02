@@ -1,23 +1,50 @@
-import React, { useState } from "react";
-import { Box, Typography, AppBar, Toolbar, Button, Menu, MenuItem } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import { Box, Typography, AppBar, Toolbar, Button, Menu, MenuItem, Tabs, Tab } from "@mui/material";
 import { COLOR } from "../utils/colors";
 import bannerlogo from '../assets/bannerlogo.jpeg'
 import kidFemale from '../assets/Kidfemale.jpg';
 import kidMale from '../assets/Kidmale.jpg';
 import PlaceIcon from "@mui/icons-material/Place";
 import PhoneIcon from "@mui/icons-material/Phone";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+const INFO_RESOURCES_TAB_VALUE = "/info-resources";
 
 const Header: React.FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const [infoResourcesActive, setInfoResourcesActive] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
   const open = Boolean(anchorEl);
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  // Custom value for "Information & Resources" tab to manage its highlight state
+  const INFO_RESOURCES_TAB_VALUE = "/info-resources";
+
+  useEffect(() => {
+    // Automatically manage the highlight state based on the current path
+    if (location.pathname.startsWith("/faq") || location.pathname.startsWith("/resources") || location.pathname.startsWith("/process")) {
+      setInfoResourcesActive(true);
+    } else {
+      setInfoResourcesActive(false);
+    }
+  }, [location.pathname]);
+
+  const handleTabChange = (event: React.SyntheticEvent, newValue: string) => {
+    // Preventing navigation to the custom value for "Information & Resources"
+    if (newValue !== INFO_RESOURCES_TAB_VALUE) {
+      navigate(newValue);
+    }
+  };
+
+  const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
+    // Highlight the "Information & Resources" tab when opening its menu
+    setInfoResourcesActive(true);
   };
 
   const handleClose = () => {
     setAnchorEl(null);
+    // Remove highlight from the "Information & Resources" tab when closing the menu
+    setInfoResourcesActive(false);
   };
   return (
     <div>
@@ -105,19 +132,18 @@ const Header: React.FC = () => {
         </Toolbar>
         <Toolbar sx={{ bgcolor: COLOR.mediumGreen }}>
           <Box display="flex" flexGrow={1} justifyContent="center" gap={2}>
-            <Button color="inherit" component={Link} to="/doctors">
-              Meet Our Doctors
-            </Button>
-            <Button color="inherit" component={Link} to="/healthservices">Services</Button>
-            <Button color="inherit" component={Link} to="/appointment">Book an Appointment</Button>
-             <Button
-              color="inherit"
-              aria-controls="resources-menu"
-              aria-haspopup="true"
-              onClick={handleClick}
+            <Tabs
+              value={infoResourcesActive ? INFO_RESOURCES_TAB_VALUE : location.pathname}
+              onChange={handleTabChange}
+              textColor="inherit"
+              indicatorColor="secondary"
+              sx={{ '.MuiTabs-indicator': {backgroundColor: 'transparent'}}}
             >
-              Information & Resources
-            </Button>
+              <Tab label="Meet Our Doctors" value="/doctors" />
+              <Tab label="Services" value="/healthservices" />
+              <Tab label="Book an Appointment" value="/appointment" />
+              <Tab label="Information & Resources" value={INFO_RESOURCES_TAB_VALUE} onClick={handleMenuOpen} sx={{ color: anchorEl ? 'white' : 'inherit' }} />
+            </Tabs>
             <Menu
               id="resources-menu"
               anchorEl={anchorEl}

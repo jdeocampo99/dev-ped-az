@@ -11,9 +11,6 @@ const ContactPage: React.FC = () => {
           <Typography variant="h2" sx={{ marginBottom: 2 }}>
             Contact Us
           </Typography>
-          <Typography variant="body1">
-            Here's how you can reach us:
-          </Typography>
         </Box>
 
         {/* Address */}
@@ -76,7 +73,7 @@ const ContactPage: React.FC = () => {
             Location
           </Typography>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.650125563526!2d-111.92340668479774!3d33.45487408075455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0309c97c1021%3A0x791e13f99b7581df!2sMedical%20St%2C%20Scottsdale%2C%20AZ%2082560%2C%20USA!5e0!3m2!1sen!2suk!4v1642691516938!5m2!1sen!2suk"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8226243759873!2d-111.97545752287557!3d33.58395437333695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b73739f055555%3A0x49d3d99b6ecc9f38!2s5020%20E%20Shea%20Blvd%20Ste.%20250%2C%20Scottsdale%2C%20AZ%2085254!5e0!3m2!1sen!2sus!4v1706847572519!5m2!1sen!2sus"
             width="100%"
             height="450"
             title="Office Location"

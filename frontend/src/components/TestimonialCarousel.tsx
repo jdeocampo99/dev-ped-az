@@ -9,9 +9,11 @@ const TestimonialsCarousel: React.FC = () => {
   const [showTestimonial, setShowTestimonial] = useState(true);
 
   const testimonials = [
-    "From the moment we stepped into the clinic, the entire experience was nothing short of phenomenal. The staff made my child feel comfortable and at ease, answering all our queries patiently. The facilities are top-notch, and we're thankful to have found such dedicated professionals. - Sarah M.",
-    "Having switched from another pediatrician, I was initially apprehensive about the transition. However, the genuine care, expertise, and warmth shown by everyone at the clinic dispelled all my concerns. They don't just treat symptoms; they care for the child's overall well-being. An absolute gem in the healthcare industry. - Martin L.",
-    "As first-time parents, we had a plethora of questions and concerns regarding our baby's health. But the team here has been our guiding light. The personalized attention, combined with state-of-the-art facilities, ensures that our little one is in the best hands possible. So grateful for their consistent support. - Rebecca and George A."
+    "Dr. Pe Benito prepared me for the battle that I was going to have with the public school system. I always get answers to my questions and concerns. - Joanne C.",
+    "Dr. De Ocampo is by far the best pediatrician we have ever dealt with. We have twins  that were adopted from Haiti at the age of 4. One has autism and ADHD and the other   has epilepsy and ADHD. She literally has been a Godsend to our family. I recommend  her 100% - Anon",
+    "Dr. Pe Benito is a wonderful physician who spends the time to listen and give proper care. Highly recommend her. - Mandy T.",
+    "Dr. De Ocampo listens and understands the concerns of the child and provides excellent advice as well as great resources to help understand the needs of my child. I’ve already noticed a substantial gain with her grades and her attention is perfect. She’s now an avid reader and taking on assignments with enthusiasm. -Lorraine T.",
+    "Dr DeOcampo is wonderful. She tries many options for our son with ADHD.  He is on the milder side of things but she is constantly advocating for him and is great at responding to questions even when we don’t have an appointment. - Dannis M."
   ];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
