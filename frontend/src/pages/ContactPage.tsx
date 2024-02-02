@@ -43,7 +43,7 @@ const ContactPage: React.FC = () => {
             Phone Number
           </Typography>
           <Typography variant="body1">
-            <Link href="tel:480-123-4567">(480) 123-4567</Link>
+            <Link href="tel:480-336-2229">(480) 336-2229</Link>
           </Typography>
         </Box>
 

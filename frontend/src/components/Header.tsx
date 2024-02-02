@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Box, Typography, AppBar, Toolbar, Button, Menu, MenuItem, Tabs, Tab } from "@mui/material";
+import { Box, Typography, AppBar, Toolbar, Button, Menu, MenuItem, Tabs, Tab, Link } from "@mui/material";
 import { COLOR } from "../utils/colors";
 import bannerlogo from '../assets/bannerlogo.jpeg'
 import kidFemale from '../assets/Kidfemale.jpg';
 import kidMale from '../assets/Kidmale.jpg';
 import PlaceIcon from "@mui/icons-material/Place";
 import PhoneIcon from "@mui/icons-material/Phone";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-const INFO_RESOURCES_TAB_VALUE = "/info-resources";
+import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -89,13 +88,13 @@ const Header: React.FC = () => {
                 height: "auto"
               }}
             />
-            <Link to="/">
+            <RouterLink to="/">
               <img
                 src={bannerlogo}
                 alt="banner logo"
                 style={{ maxHeight: "17vh", maxWidth: "100%", height: "auto" }}
               />
-            </Link>
+            </RouterLink>
             <img
               src={kidMale}
               alt="Kid Male"
@@ -113,20 +112,16 @@ const Header: React.FC = () => {
               sx={{ fontSize: 15, color: COLOR.darkGreen }}
               color="inherit"
               variant="text"
-              component={Link}
+              component={RouterLink}
               to="/contact"
             >
               Contact Us
             </Button>
             <Box display="flex" alignItems="start" height="100%">
               <PhoneIcon sx={{ color: COLOR.darkGreen, marginTop: "6px" }} />
-              <Button
-                sx={{ fontSize: 15, color: COLOR.darkGreen }}
-                color="inherit"
-                variant="text"
-              >
-                480-123-4567
-              </Button>
+              <Typography variant="body1" sx={{marginTop: "5px", marginLeft: "5px"}}>
+                <Link href="tel:480-336-2229" color={COLOR.darkGreen}>(480) 336-2229</Link>
+              </Typography>
             </Box>
           </Box>
         </Toolbar>
@@ -151,9 +146,9 @@ const Header: React.FC = () => {
               open={open}
               onClose={handleClose}
             >
-              <MenuItem component={Link} to="/faq" onClick={handleClose}>FAQ</MenuItem>
-              <MenuItem component={Link} to="/resources" onClick={handleClose}>Resources</MenuItem>
-              <MenuItem component={Link} to="/process" onClick={handleClose}>Process</MenuItem>
+              <MenuItem component={RouterLink} to="/faq" onClick={handleClose}>FAQ</MenuItem>
+              <MenuItem component={RouterLink} to="/resources" onClick={handleClose}>Resources</MenuItem>
+              <MenuItem component={RouterLink} to="/process" onClick={handleClose}>Process</MenuItem>
             </Menu>
           </Box>
         </Toolbar>
