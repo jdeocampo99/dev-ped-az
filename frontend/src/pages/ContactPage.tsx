@@ -53,7 +53,7 @@ const ContactPage: React.FC = () => {
             Fax Number
           </Typography>
           <Typography variant="body1">
-            <Link href="tel:+1-907-555-1234">+1-907-555-1234 </Link>
+            <Link href="tel:480-914-7523">480-914-7523 </Link>
           </Typography>
         </Box>
 
@@ -63,7 +63,7 @@ const ContactPage: React.FC = () => {
             Email
           </Typography>
           <Typography variant="body1">
-            <Link href="mailto:info@example.com">info@example.com</Link>
+            <Link href="mailto:dbpaz@hushmail.com">dbpaz@hushmail.com</Link>
           </Typography>
         </Box>
 

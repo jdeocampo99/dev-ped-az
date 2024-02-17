@@ -62,9 +62,11 @@ const Header: React.FC = () => {
         >
           <Box display="flex" alignItems="start" height="100%">
             <PlaceIcon sx={{ color: COLOR.darkGreen }} />
-            <Typography variant="body2" sx={{ color: COLOR.darkGreen }}>
-              5020 E Shea Blvd Suite 250, Scottsdale, AZ 85254
-            </Typography>
+            <Link href="https://maps.app.goo.gl/bDxPaGAaJLuqFS7MA" color={COLOR.darkGreen} target="_blank">
+              <Typography variant="body2" sx={{ color: COLOR.darkGreen }}>
+                5020 E Shea Blvd Suite 250, Scottsdale, AZ 85254
+              </Typography>
+            </Link>
           </Box>
           <Box
             display="flex"
