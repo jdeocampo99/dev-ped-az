@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Container,
@@ -11,6 +11,20 @@ import Header from "../components/Header";
 import { COLOR } from "../utils/colors";
 
 const AppointmentPage: React.FC = () => {
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = "https://hushforms.com/f/public/javascript/embed-hush-form.js";
+        script.async = true;
+
+        script.onload = () => console.log("Script loaded successfully.");
+        script.onerror = (error) => console.error("Script loading error:", error);
+
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
   return (
     <div>
         <Header/>
@@ -29,106 +43,7 @@ const AppointmentPage: React.FC = () => {
             <Typography gutterBottom>
             Please fill out this form and our staff <br/>will contact you regarding next steps.
             </Typography>
-            <form>
-            <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
-                <TextField
-                    fullWidth
-                    label="First Name"
-                    variant="outlined"
-                    required
-                />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                <TextField
-                    fullWidth
-                    label="Last Name"
-                    variant="outlined"
-                    required
-                />
-                </Grid>
-                <Grid item xs={12}>
-                <TextField
-                    fullWidth
-                    label="Email"
-                    variant="outlined"
-                    required
-                    type="email"
-                />
-                </Grid>
-                <Grid item xs={12}>
-                <TextField
-                    fullWidth
-                    label="Phone Number"
-                    variant="outlined"
-                    required
-                />
-                </Grid>
-                <Grid item xs={12}>
-                <TextField
-                    fullWidth
-                    label="Child's Name"
-                    variant="outlined"
-                    required
-                />
-                </Grid>
-                <Grid item xs={12}>
-                <TextField
-                    fullWidth
-                    label="Child's Date of Birth"
-                    variant="outlined"
-                    required
-                    type="date"
-                    InputLabelProps={{
-                    shrink: true,
-                    }}
-                />
-                </Grid>
-                <Grid item xs={12}>
-                <TextField
-                    fullWidth
-                    label="How did you hear about us?"
-                    variant="outlined"
-                    required
-                />
-                </Grid>
-                <Grid item xs={12}>
-                <TextField
-                    fullWidth
-                    label="What concerns do you have for your child?"
-                    variant="outlined"
-                    multiline
-                    rows={4}
-                    required
-                />
-                </Grid>
-                <Grid item xs={12}>
-                <TextField
-                    fullWidth
-                    label="Does your child have any pre-existing diagnoses?"
-                    variant="outlined"
-                    multiline
-                    rows={4}
-                    required
-                />
-                </Grid>
-            </Grid>
-            <Button
-                type="submit"
-                variant="contained"
-                color="primary"
-                fullWidth
-                sx={{ 
-                    mt: 2, 
-                    backgroundColor: COLOR.darkGreen,
-                    "&:hover": {
-                        backgroundColor: COLOR.mediumGreen,
-                    },
-                }}
-            >
-                Submit
-            </Button>
-            </form>
+            <div data-secure-form="dbpaz-secure-contact-form"></div>
         </Box>
         </Container>
     </div>
